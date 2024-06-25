@@ -1,0 +1,235 @@
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    /* Fixar o cabeçalho */
+    width: 100%;
+    z-index: 1;
+    /* Garantir que esteja na sobre os outros elementos */
+    box-shadow: 0 2px 4px #000;
+    /*"box-shadow" = É utilizado para adicionar efeitos de sombra em volta de um elemento.*/
+}
+
+.logo {
+    max-width: 50px;
+    margin-right: 15px;
+    /* Margem à direita */
+    border-radius: 100%;
+}
+
+.nav-link {
+    color: #ffffff;
+    margin: 0 10px;
+    /*Afastamento entre as palavras*/
+}
+
+.naves {
+    display: flex;
+    /* Flexbox para alinhar os itens horizontalmente */
+    justify-content: flex-end;
+    /* Alinha os itens à direita */
+    align-items: center;
+    /* Alinha os itens ao centro */
+}
+
+footer {
+    background-color: #333;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+.fixo {
+    position: absolute;
+    background-color: #333;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+.acessoPagSobreNos {
+    color: #ffffff;
+}
+
+/*LISTA DE PRODUTOS - FRUTAS, LEGUMES E VERDURAS*/
+.tituloListaProdutos,
+.tituloCarrinho {
+    color: rgb(253, 203, 65);
+    font-size: 4em;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 80px;
+    /*Afastamento entre o conteúdo e a tela*/
+}
+
+.fraseListaProdutos {
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 300px;
+    height: 300px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.imagemProduto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    width: 100%;
+    height: 69%;
+}
+
+/*PÁGINA DE CADASTRO DE CLIENTE*/
+.botaoVoltarPagCadastro {
+    text-decoration: none;
+    /* Remove sublinhado padrão */
+    display: inline-block;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    /* Se precisar de uma borda */
+    align-items: center;
+    /* Centraliza verticalmente */
+    background-color: transparent;
+    border: transparent;
+    /* Se precisar de uma borda */
+    color: #ff0000;
+    /* Cor do texto */
+    padding: 10px 20px;
+    /* Ajuste conforme necessário */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Altera o cursor ao passar por cima */
+    display: flex;
+}
+
+.setaVoltarPagCadastro {
+    margin-right: 5px;
+    /*Afastamento entre as palavras*/
+}
+
+/*PÁGINA DE PAGAMENTO FINALIZADO E CANCELADO:*/
+.conteudoPagFinal {
+  
+    text-align: center;
+    margin-top: 200px;
+}
+
+.tituloPagFinal {
+    font-size: 3em;
+    color: rgb(34, 81, 41);
+}
+
+/*PÁGINA DE SOBRE NÓS:*/
+.tituloPagSobreNos {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.membros {
+    text-align: center;
+}
+
+.imagemMembro {
+    width: 250px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+
+
+/*PÁGINA FORMA DE PAGAMENTO*/
+.tituloPagPagamento {
+    margin-top: 50px;
+    /*Afastar conteúdo do topo*/
+    text-align: center;
+    font-size: 70px;
+}
+.subtituloPagPagamento {
+    text-align: center;
+    font-size: 30px;
+}
+
+.forma-pagamento {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 25px;
+    /*Afastamento entre os objeto*/
+    border-radius: 10px;
+}
+
+.subtituloPagPixCompra {
+    text-align: center;
+}
+
+/*DADOS DO CARTÃO*/
+.baixo {
+    margin-top: 60px;
+    /*Afastar conteúdo do topo*/
+}
+.mais{
+    margin-top: 30px;
+}
+
+/*PÁGINA DE PAGAMENTO EM PIX*/
+.pagPixCompra {
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+
+}
+
+.tituloPagPixCompra {
+    padding-top: 80px;
+    /*Afastamento entre o conteúdo e a tela*/
+    text-align: center;
+    margin-bottom: 60px;
+    /*Afastamento entre os objeto*/
+    font-size: 70px;
+}
+
+/*Página de cancelamento de produto*/
+.cancelar {
+    border: 2px solid red;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }
+  .concluido {
+    border: 2px solid green;
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }

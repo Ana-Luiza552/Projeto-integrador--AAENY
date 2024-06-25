@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+                crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+        <title>Carrinho</title>
+</head>
+
+<body>
+        <header>
+                <div class="container">
+                        <div class="row">
+                                <div class="col-lg-6">
+                                        <img src="./img/Frutas, legumes e verduras.png" alt="Logo" class="logo" />
+                                        <span><strong>FRUTAS, LEGUMES E VERDURAS</strong></span>
+                                </div>
+                                <div class="col-lg-6 naves">
+                                        <ul class="nav nav-pills">
+                                                <li><a href="./frutas.html" class="nav-link"><strong>Frutas</strong></a>
+                                                </li>
+                                                <li><a href="./legumes.html"
+                                                                class="nav-link"><strong>Legumes</strong></a></li>
+                                                <li><a href="./verdura.html"
+                                                                class="nav-link"><strong>Verduras</strong></a></li>
+                                                <li><a href="./sobrenos.html" class="nav-link"><strong>Sobre
+                                                                        nós</strong></a></li>
+                                                <li><a href="./carrinho.html"
+                                                                class="nav-link"><strong>Carrinho</strong></a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+        </header>
+        <main class="container col-9 ">
+                <h1 class="tituloCarrinho">Carrinho</h1>
+                <table class="table table-striped" id="tabela" border="1">
+                        <thead>
+                                <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Produto</th>
+                                        <th scope="col">Valor</th>
+                                        <th scope="col">Quantidade</th>
+                                        <th scope="col">Ação</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                        <td><img src="https://img.freepik.com/fotos-gratis/foto-aproximada-de-tomates-frescos-com-gotas-de-agua_125540-4204.jpg"
+                                                        height="50" width="80"></td>
+                                        <td>Tomate</td>
+                                        <td class="alimento">10.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://campovivo.com.br/wp-content/uploads/2016/09/laranja-pera.jpg"
+                                                        height="50" width="80"></td>
+                                        <td>Laranja</td>
+                                        <td class="alimento">5.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://www.ceasa-ce.com.br/wp-content/uploads/sites/87/2019/09/morango.jpg"
+                                                        height="50" width="80"> </td>
+                                        <td>Morango</td>
+                                        <td class="alimento">8.36</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://wickbold.com.br/wp-content/uploads/2023/11/Beneficios-do-limao-para-saude.webp"
+                                                        height="50" width="80" /></td>
+                                        <td>Limão</td>
+                                        <td class="alimento">16.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://organicosinbox.com.br/wp-content/uploads/2020/11/alface-crespa-organica.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Alface</td>
+                                        <td class="alimento">5.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvxXgqE32yOcr64D9iWNKmrr6M86e30JTCaw&s"
+                                                        height="50" width="80" /></td>
+                                        <td>Couve</td>
+                                        <td class="alimento">5.40</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://conteudo.imguol.com.br/c/entretenimento/0e/2017/10/15/batata-crua-1508077604971_v2_1920x1269.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Batata</td>
+                                        <td class="alimento">8.45</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://ceagesp.gov.br/wp-content/uploads/2015/09/repolho_liso-600x469.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Repolho</td>
+                                        <td class="alimento">3.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://longevidadesaudavel.com.br/wp-content/uploads/2023/08/19.png"
+                                                        height="50" width="80" /></td>
+                                        <td>Manga</td>
+                                        <td class="alimento">8.98</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://longevidadesaudavel.com.br/wp-content/uploads/2023/08/7.png"
+                                                        height="50" width="80" /></td>
+                                        <td>Abacaxi</td>
+                                        <td class="alimento">9.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/abacates.jpg.webp"
+                                                        height="50" width="80" /></td>
+                                        <td>Abacate</td>
+                                        <td class="alimento">7.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://tribunadejundiai.com.br/wp-content/uploads/2022/06/Beneficios-da-goiaba.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Goiaba</td>
+                                        <td class="alimento">15.98</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://meuamigotemumsitio.com.br/wp-content/uploads/2023/07/nature-plant-fruit-ripe-food-produce-501860-pxhere.com_.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Banana prata</td>
+                                        <td class="alimento">6.98</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/10/25/1217144114-i814811.jpeg"
+                                                        height="50" width="80" /></td>
+                                        <td>Banana nanica</td>
+                                        <td class="alimento">6.98</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://fazfacil.com.br/wp-content/uploads/2017/09/20170905-amoreira-preta-frutos.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Amora</td>
+                                        <td class="alimento">13.70</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://s1.static.brasilescola.uol.com.br/be/2023/08/fatias-de-melancia-proximas-a-uma-melancia-inteira.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Melancia</td>
+                                        <td class="alimento">18.40</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://blog.ingredientesonline.com.br/wp-content/uploads/2022/01/WhatsApp-Image-2022-07-12-at-11.18.56.jpeg"
+                                                        height="50" width="80" /></td>
+                                        <td>Coco</td>
+                                        <td class="alimento">6.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://s2-receitas.glbimg.com/Fi1qTL-hIIDTCIIWEXZ85Vd_bL8=/0x0:1366x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/f/u/BhokBnRQiNrFkAjLpGCg/beterraba-cozida.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Beterraba</td>
+                                        <td class="alimento">9.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://s2-oglobo.glbimg.com/K2DjAXSWx1nmZnKRjZi1zWHlNX8=/0x0:5183x3765/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/G/r/QIjP70RkGnE2no2OCU9w/tomasz-olszewski-9rt6gv-ijha-unsplash.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Coentro</td>
+                                        <td class="alimento">2.50</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://www.infoescola.com/wp-content/uploads/2010/08/cenoura_250834906.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Cenoura</td>
+                                        <td class="alimento">4.98</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://organicosinbox.com.br/wp-content/uploads/2020/11/abobora-organica.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Abóbora</td>
+                                        <td class="alimento">6.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3321973:1673298382/Mel%C3%A3o%202.jpg?f=16x9&$p$f=be2bfbf"
+                                                        height="50" width="80" /></td>
+                                        <td>Melão</td>
+                                        <td class="alimento">7.27</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://conteudo.imguol.com.br/c/entretenimento/61/2017/10/25/cebola-1508951722238_v2_1920x1275.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Cebola</td>
+                                        <td class="alimento">7.30</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://doutorjairo.com.br/media/_versions/istock-1_dentes_de_alho_widelg.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Alho</td>
+                                        <td class="alimento">5.38</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://frootiva.com.br/wp-content/uploads/2022/12/acerola.jpg"
+                                                        height="50" /></td>
+                                        <td>Acerola</td>
+                                        <td class="alimento">3.58</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.tuasaude.com/media/article/yf/tb/beneficios-da-pitanga_52609_l.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Pitanga</td>
+                                        <td class="alimento">13.48</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://doutorjairo.com.br/media/uploads/istock-_kiwi.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Kiwi</td>
+                                        <td class="alimento">18.28</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://www.sucodeuvapuro.com.br/wp-content/uploads/2021/04/foto-sortimentos.com_.jpeg"
+                                                        height="50" width="80" /></td>
+                                        <td>Uva</td>
+                                        <td class="alimento">5.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://agrodomingues.com.br/wp-content/uploads/2020/10/paprika-yellow-vegetables-318208.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Pimentão amarelo</td>
+                                        <td class="alimento">6.58</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://organicosinbox.com.br/wp-content/uploads/2020/11/pimentao-verde-organico.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Pimentão verde</td>
+                                        <td class="alimento">4.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.itdg.com.br/images/auto-auto/d358afb7e26413ae69158e01a449cad1/cesto-com-pimentoes-vermelhos.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Pimentão vermelho</td>
+                                        <td class="alimento">11.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.tuasaude.com/media/article/io/m2/beneficios-da-carambola_13462_l.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Carambola</td>
+                                        <td class="alimento">17.95</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://vitat.com.br/wp-content/uploads/2019/12/depositphotos_69751357_xl-2015-1.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Maracujá</td>
+                                        <td class="alimento">10.98</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://forumdocacau.com.br/wp-content/uploads/2019/03/IMG_6177.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Cacau</td>
+                                        <td class="alimento">24.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://boali.com.br/wp-content/uploads/2021/01/Pitaya.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Pitaya</td>
+                                        <td class="alimento">39.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.itdg.com.br/images/auto-auto/5391eab33af911d9bad8e95a8b3a57f1/shutterstock-290834552.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Maçã</td>
+                                        <td class="alimento">13.98</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://villalvafrutas.com.br/wp-content/uploads/2018/04/251656151656565115.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Mexerica</td>
+                                        <td class="alimento">17.75</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://www.pensenatural.com.br/wp-content/uploads/2018/09/pera-1.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Pêra</td>
+                                        <td class="alimento">7.50</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.tuasaude.com/media/article/la/fp/jaca_32147_l.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Jaca</td>
+                                        <td class="alimento">11.97</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://conteudo.imguol.com.br/c/entretenimento/53/2020/05/04/brocolis-1588626077191_v2_4x3.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Brócolis</td>
+                                        <td class="alimento">16.86</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://uploads.metropoles.com/wp-content/uploads/2017/04/24204302/caqui.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Caqui</td>
+                                        <td class="alimento">7.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://www.infoescola.com/wp-content/uploads/2010/04/graviola-fruta_214664239.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Graviola</td>
+                                        <td class="alimento">23.39</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://cdn.awsli.com.br/600x450/18/18885/produto/158985432/3d129c228c.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Ameixa</td>
+                                        <td class="alimento">7.32</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://uploads.metropoles.com/wp-content/uploads/2023/07/13171200/Damasco-1.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Damasco</td>
+                                        <td class="alimento">60.53</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static1.thmais.com.br/wp-content/uploads/2023/11/jabuticaba-supera-acai-e-e-eleita-a-segunda-melhor-fruta-do-mundo-em-ranking-mundial.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Jabuticaba</td>
+                                        <td class="alimento">17.95</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHaKcOYrA-A-bHXTImeqLePQ3i5UJT6Ua3ng&s"
+                                                        height="50" width="80" /></td>
+                                        <td>Jenipapo</td>
+                                        <td class="alimento">6.57</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://conteudo.imguol.com.br/c/entretenimento/b5/2022/03/03/framboesa-1646327024224_v2_450x450.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Framboesa</td>
+                                        <td class="alimento">10.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://cdn.awsli.com.br/600x450/163/163535/produto/60026021/421f7f4993.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Siriguela</td>
+                                        <td class="alimento">8.69</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://images.tcdn.com.br/img/img_prod/1238170/jambo_roxo_syzygium_malaccense_401_2_1647d02067e328b258a7c8fd3a4ae582.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Jambo</td>
+                                        <td class="alimento">7.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSATCd6NgpxNueHGBBntpadbC04qCfNbgV68w&s"
+                                                        height="50" width="80" /></td>
+                                        <td>Figo</td>
+                                        <td class="alimento">22.75</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0H5IokEqx_3XEUFs5wLUc-e62poZUy_2ZAA&s"
+                                                        height="50" width="80" /></td>
+                                        <td>Maxixe</td>
+                                        <td class="alimento">10.96</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.itdg.com.br/images/1200-630/38c2c29062a95113af727e2444ea790d/shutterstock-669377836.jpg"
+                                                        height="50" width="80" /></td>
+                                        </td>
+                                        <td>Quiabo</td>
+                                        <td class="alimento">6.35</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://s1.static.brasilescola.uol.com.br/be/2021/05/pepino.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Pepino</td>
+                                        <td class="alimento">8.94</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://media.istockphoto.com/id/90634594/pt/foto/couve-flor.jpg?s=612x612&w=0&k=20&c=KflodeCBxGv5-Q_4rE5i8vL-LoAjpNoX4v07mmLh_PM="
+                                                        height="50" width="80" /></td>
+                                        <td>Couve-flor</td>
+                                        <td class="alimento">15.95</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDN2k7F09bAQb2SKMj5dybgCnliOtSZTLaPw&s"
+                                                        height="50" width="80" /></td>
+                                        <td>Bertalha</td>
+                                        <td class="alimento">5.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://media.istockphoto.com/id/157330429/pt/foto/espinafre-de-beb%C3%A9.jpg?s=612x612&w=0&k=20&c=PNN88kpakVkcex1CCIrZKH3qtbOnXXsPHKNz_RVUwdA="
+                                                        height="50" width="80" /></td>
+                                        <td>Espinafre</td>
+                                        <td class="alimento">10.45</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://conteudo.imguol.com.br/c/entretenimento/6b/2022/07/21/chicoria-1658438023973_v2_450x253.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Chicória</td>
+                                        <td class="alimento">16.32</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SpNefxn8fQPZwvifd2WMYffZAotZZWYM1Q&s"
+                                                        height="50" width="80" /></td>
+                                        <td>Alho-poró</td>
+                                        <td class="alimento">25.00</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://spdm.org.br/wp-content/uploads/2017/06/k2_items_src_4f424d273207076187fcaaac234fe4fd.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Rabanete</td>
+                                        <td class="alimento">30.00</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://media.istockphoto.com/id/627233152/pt/foto/frescos-r%C3%BAcula.jpg?s=612x612&w=0&k=20&c=kn73AqY2eq6wK-X9uQLRH0SkL6jK1G4CRu5PqYbhYts="
+                                                        height="50" width="80" /></td>
+                                        <td>Rúcula</td>
+                                        <td class="alimento">8.00</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://conteudo.imguol.com.br/c/entretenimento/05/2021/11/25/nabo-1637878415741_v2_1254x836.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Nabo</td>
+                                        <td class="alimento">12.47</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.itdg.com.br/images/auto-auto/b9588d15c2a02a01846dfd9f2f708edb/acelga.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Acelga</td>
+                                        <td class="alimento">9.85</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://s2.glbimg.com/9hYBUuMKErkXbEP8jdYaEDPve1s=/e.glbimg.com/og/ed/f/original/2015/08/18/epocade_chuchu.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Chuchu</td>
+                                        <td class="alimento">10.00</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://tribunadejundiai.com.br/wp-content/uploads/2022/07/aspargos-horta-e-jardim-1-compressed.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Aspargo</td>
+                                        <td class="alimento">5.69</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-N-_Xty6FkMY1OskDgPgzkmgD_k4XzSNK2A&s"
+                                                        height="50" width="80" /></td>
+                                        <td>Agrião</td>
+                                        <td class="alimento">11.36</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.itdg.com.br/images/auto-auto/f76726d42be9230f95f0ed57cba8c495/como-escolher-berinjela.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Berinjela
+                                        </td>
+                                        <td class="alimento">9.56</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.tuasaude.com/media/article/gb/wv/beneficios-do-inhame_22125_l.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Inhame</td>
+                                        <td class="alimento">10.40</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://segredosdacomida.com.br/wp-content/uploads/2023/02/Precisa-descascar-abobrinha.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Abobrinha</td>
+                                        <td class="alimento">7.20</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://conteudo.imguol.com.br/c/entretenimento/ed/2019/06/14/batata-doce-1560551337997_v2_4x3.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Batata-Doce</td>
+                                        <td class="alimento">4.80</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2022/11/23/1202695780-cupuacu-1.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Cupuaçu</td>
+                                        <td class="alimento">55.00</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://static.tuasaude.com/media/article/yt/pb/beneficios-do-pessego_40980_l.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Pêssego</td>
+                                        <td class="alimento">15.99</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://www.shutterstock.com/image-photo/brazilian-fruit-caja-straw-basket-600nw-2023752674.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Cajá</td>
+                                        <td class="alimento">85.00</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                                <tr>
+                                        <td><img src="https://www2.uel.br/projetos/agroecologicos/wp-content/uploads/2019/03/DSC_5408.jpg"
+                                                        height="50" width="80" /></td>
+                                        <td>Taioba</td>
+                                        <td class="alimento">3.60</td>
+                                        <td>KG</td>
+                                        <td><button type="submit" class="btn btn-primary me-md-2"
+                                                        onclick="excluirLinha(this)">Excluir</button></td>
+                                </tr>
+                        </tbody>
+                </table>
+                <div id="total"></div>
+                <button type="submit" class="btn btn-primary me-md-2 cima" onclick="finalizar()" id="finalizar"
+                        onmouseover="mudarCor('green')" onmouseout="mudarCor('blue')">Finalizar</button>
+        </main>
+        <script>
+
+
+
+                function calcularTotal() {
+                        var alimentos = document.getElementsByClassName("alimento");
+                        total = 0;
+                        for (var i = 0; i < alimentos.length; i++) {
+                                total += parseFloat(alimentos[i].innerHTML);
+                        }
+                }
+
+                function excluirLinha(botao) {
+                        var linha = botao.parentNode.parentNode;
+                        linha.parentNode.removeChild(linha);
+                        calcularTotal();
+                        document.getElementById("total").innerHTML = "Total: R$ " + total.toFixed(2);
+                }
+
+                window.onload = function () {
+                        calcularTotal();
+                        document.getElementById("total").innerHTML = "Total: R$ " + total.toFixed(2);
+                };
+
+                function finalizar() {
+                        var botao = document.getElementById("finalizar")
+                        window.location.href = "cadastro.html"
+                }
+                function mudarCor(cor) {
+                        document.getElementById('finalizar').style.backgroundColor = cor;
+
+                }
+
+        </script>
+        <br>
+<footer>
+        <p class="mb-0">&copy; 2024 Sua Empresa. Todos os direitos reservados.
+            <a href="sobrenos.html" class="acessoPagSobreNos"><strong><u>FLV</u></strong></a> - FRUTAS, LEGUMES E
+            VERDURAS
+        </p>
+    </footer>
+</body>
+
+</html>
